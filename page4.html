@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-navbar{
+            background-color: #359FA0;
+        }
+        .navbar-nav{
+            gap: 50px;
+            font-size: 20px;
+        }
+        .portal-btn {
+            width: 110px;
+            min-width: 110px;
+            flex-shrink: 0;
+            white-space: nowrap;
+            background-color: #FF8C52;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .campus{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 48px;
+            margin: 0;
+            margin-right: 0px;
+        }
 
+        .campus li {
+            width: 300px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .campus li span {
+            white-space: nowrap;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color:  #23415C;;
+        }
+
+        .campus li span::before {
+            content: none;
+        }
+        #photo1{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo2{
+             width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo3{
+             width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo4{
+             width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        #photo5{
+             width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            font-family: Montserrat;
+        }
+        h2{
+            text-align: center;
+            font-weight: bold;
+            font-family: Poppins;
+        }
+        p{
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fPjyNg5xFEOtT5wBIhcsb3H__yQMgGnnE6Y-yCOr6VzFjiJQctV9dWo&s=10" alt="logo" id="logo" class="rounded-circle" style="height: 70px; width: 70px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#Home">Home Page</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#Courses">Courses Offer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Enroll">Enroll Now</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About the Students</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center gap-2 navbar-form">
+        <input class="form-control search-input" type="search" placeholder="Search">
+        <button class="btn portal-btn" type="button">My Portal</button>
+        <button class="btn portal-btn" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<br>
+<section id="Contact" style="padding: 50px 0;">
+
+<h2>Our Office Hours</h2>
+            <table class="table-bordered align-middle p-3 text-center mx-auto" style="width: 80%">
+                <thead>
+                    <tr style="background-color: lch(99.14% 12.66 107.58)">
+                        <th>DAY</th>
+                        <th>OFFICE HOURS</th>
+                        <th>DEPARTMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>8:00 AM - 4:00 PM</td>
+                        <td>REGISTRAR'S OFFICE</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>8:00 AM - 4:00 PM</td>
+                        <td>ACCOUNTING OFFICE</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8:00 AM - 4:00 PM</td>
+                        <td>GUIDANCE OFFICE</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>8:00 AM - 4:00 PM</td>
+                        <td>FACULTY OFFICE</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>8:00 AM - 3:00 PM</td>
+                        <td>ADMIN OFFICE</td>
+                    </tr>
+                </tbody>
+            </table>
+<br>
+            <h2 style="font-size: 24px;">Contact Us</h2>
+            <p>For inquiries, please reach out to us by answering the form below:</p>
+        <form>
+            <label for="Name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            <label for="message" class="form-label">Send us a Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            <button type="submit" class="btn" style="background-color: hsl(0, 0%, 100%); border-color: #FFD371; color: #FFD371;">Submit</button>
+        </form>
+<br>
+</section>
+
+<footer>
+    <p style="color: white; background-color: #359FA0; padding: 10px; text-align: center;">@2026 O.B. Montessori Center. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
+</html>
