@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .custom-navbar{
-            background-color: #359FA0;
+            background-color: #9DDAC6;
         }
         .navbar-nav{
             gap: 50px;
@@ -18,7 +18,7 @@
             min-width: 110px;
             flex-shrink: 0;
             white-space: nowrap;
-            background-color: #FF8C52;
+            background-color: #FF4848;
         }
         #logo{
             display: block;
@@ -51,9 +51,22 @@
             padding: 10px;
             border-radius: 10px;
         }
-        p{
+        h5{
             text-align: center;
             font-size: 20px;
+        }
+        span{
+            font-weight: bold;
+        }
+        #submit {
+            padding: 10px 100px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(209, 126, 47);
+            color: white;
+            font-family: Montserrat;
+            font-weight: bold;
         }
     </style>
 
@@ -94,7 +107,7 @@
 
 <body>
     <div class="container-fluid" id="container">
-        <div class="row vh-100">
+        <div class="row">
             <div class="col">
                 <header>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fPjyNg5xFEOtT5wBIhcsb3H__yQMgGnnE6Y-yCOr6VzFjiJQctV9dWo&s=10" alt="logo" id="logo" class="rounded-circle" style="height: 80px; width: 80px;">
@@ -102,10 +115,10 @@
                 </header>
                 <br>
 
-                <p>Start you learning journey with us! Please fill out the form below to register.</p>
+                <h5>Start you learning journey with us! Please fill out the form below to register.</h5>
                 <br>
                 <br>
-                <div class="fillup">
+                <div class="container-fluid" id="fillup">
                     <form action="">
                         <h3>Student Information</h3>
                         <br>
@@ -164,7 +177,7 @@
                             <div class="col-4">
                                 <span><label for="religion">Religious Affiliation</label></span>
                                 <br>
-                                <select name="religions" id="religion" class="form-control">
+                                <select class="form-select"name="religions" id="religion" class="form-control">
                                     <option value="select" disabled> Select Religious Affiliation</option>
                                     <option value="1">Roman Catholic</option>
                                     <option value="2">Iglesia ni Christo</option>
@@ -204,11 +217,121 @@
                                <br>
                                <input type="name" id="address" class="form-control" name="address" required>
                             </div>
+                            <div class="col-6">
+                               <span><label for="type">Enrollment Type:</label></span>
+                               <br>
+                               <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="checked">
+                                <label class="form-check-label" for="check1">New Student</label>
+                                <br>
+                                
+                                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="checked">
+                                <label class="form-check-label" for="check2">Transferee</label>
+                                <br>
+                                
+                                <input type="checkbox" class="form-check-input" id="check3" name="option3" value="checked">
+                                <label class="form-check-label" for="check3">Returning Student</label>
+                               </div>
+                            </div>
                         </div>
+
+                        <br>
+                        <br>
+                        
+                        <h3>Parent/Guardian Information</h3>
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><label for="father">Father's Full Name:</label></span>
+                                <br>
+                                <input type="name" id="father" name="father" class="form-control"required>
+                            </div>
+
+                            <div class="col-4">
+                                <span><label for="mother">Mother's Full Name:</label></span>
+                                <br>
+                               <input type="name" id="mother" name="mother" class="form-control"required>
+                            </div>
+
+                            <div class="col-4">
+                                <span><label for="guardian">Guardian's Full Name (if applicable):</label></span>
+                                <br>
+                                <input type="name" id="guardian" name="guardian" class="form-control"required>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <span><label for="contact">Parent/Guardian Contact Number:</label></span>
+                                <br>
+                                <input type="number" id="contact" name="contact" class="form-control" required>
+                            </div>
+
+                            <div class="col-4">
+                                <span><label for="email">Parent/Guardian Email Address:</label></span>
+                                <br>
+                               <input type="name" id="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="col-4">
+                                <span><label for="occupation">Occupation:</label></span>
+                                <br>
+                                <input type="name" id="occupation" name="occupation" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <h3>Health Information</h3>
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <span><label for="allergies">Allergies:</label></span>
+                                <br>
+                                <input type="name" id="allergies" name="allergies" class="form-control" required>
+                            </div>
+
+                            <div class="col-4">
+                                <span><label for="medical">Medical Conditions:</label></span>
+                                <br>
+                               <input type="name" id="medical" name="medical" class="form-control" required>
+                            </div>
+
+                            <div class="col-4">
+                                <span><label for="medication">Maintenance medications:</label></span>
+                                <br>
+                                <input type="name" id="medication" name="medication" class="form-control" required>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+
+                        <p>I hereby certify that all the knowledge in this enrollment form is true, correct, and complete to the best of my knowledge. I understand  that any false information may affect the student's enrollment.</p>
+                        
+                        <div class="col-6">
+                               <div class="form-check">
+                                 <input type="checkbox" class="form-check-input" id="check1" name="option1" value="checked">
+                                 <label class="form-check-label" for="check1" style="font-weight: bold;">I understand.</label>
+                                 <br>
+                               </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="d-grid gap-3">
+                            <button type="button" class="btn btn-block" id="submit">Submit</button>
+                        </div>
+                        <br>
+                        <br>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+<footer>
+    <p style="color: white; background-color: #359FA0; padding: 10px; text-align: center;">@2026 O.B. Montessori Center. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
